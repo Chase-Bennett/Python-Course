@@ -23,3 +23,7 @@ print(True < False)
 
 print('"I\'m"'+ '\n""Learning""'+'\n"""Python"""')
 print(2**3)
+
+print( 12//4.5)
+print( 12%4.5)
+
