@@ -27,3 +27,14 @@ print(2**3)
 print( 12//4.5)
 print( 12%4.5)
 
+print(-4 - 4)
+print(4. - 8)
+print(-1.1)
+print(+2)
+
+print(" \n\nExponents go right to Left and before the subtraction, they are negative")
+print(-3 ** 2)
+print(-2 ** 3)
+print(-(3 ** 2))
+print(2 ** 2 ** 3)
+
