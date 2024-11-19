@@ -38,3 +38,5 @@ print(-2 ** 3)
 print(-(3 ** 2))
 print(2 ** 2 ** 3)
 
+print("when he operations are on the same priority, then go left to right \n 2 * 3 % 5")
+print(2 * 3 % 5)
