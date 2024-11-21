@@ -76,3 +76,42 @@ print( str(john) + "," + str(mary) + "," + str(adam))
 print(john, mary, adam, sep=',')
 total_Apples = john + mary + adam
 print(total_Apples)
+
+
+kilometers = 12.25
+miles = 7.38
+
+miles_to_kilometers = miles*(1.61/1)
+kilometers_to_miles = kilometers*(1/1.61)
+
+print(miles, "miles is", round(miles_to_kilometers, 2), "kilometers")
+print(kilometers, "kilometers is", round(kilometers_to_miles, 2), "miles")
+
+"""
+##Sample input
+x = 0
+x = 1
+x = -1
+Sample output
+y = -1.0
+y = 3.0
+y = -9.0
+"""
+
+
+
+
+x =  0
+x = float(x)
+y=(3*x**3)-(2*x**2) + (3*x) -(1)
+print("y =", y)
+
+x =  1
+x = float(x)
+y=(3*x**3)-(2*x**2) + (3*x) -(1)
+print("y =", y)
+
+x =  -1
+x = float(x)
+y=(3*x**3)-(2*x**2) + (3*x) -(1)
+print("y =", y)
