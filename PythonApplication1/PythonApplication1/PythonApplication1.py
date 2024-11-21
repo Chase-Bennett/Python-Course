@@ -115,3 +115,11 @@ x =  -1
 x = float(x)
 y=(3*x**3)-(2*x**2) + (3*x) -(1)
 print("y =", y)
+
+"""
+print("Tell me anything...")
+anything = input()
+print("Hmm...", anything, "... Really?")
+"""
+anything = input("Tell me anything...")
+print("Hmm...", anything, "...Really?")
