@@ -133,7 +133,7 @@ print(anything, "to the power of 2 is", something)
 leg_a = float(input("Input first leg length: "))
 leg_b = float(input("Input second leg length: "))
 print("Hypotenuse length is", (leg_a**2 + leg_b**2) ** .5)
-"""
+
 fnam = input("May I have your first name, please? ")
 lnam = input("May I have your last name, please? ")
 print("Thank you.")
@@ -142,3 +142,64 @@ print("\nYour name is " + fnam + " " + lnam + ".")
 print("+" + 10 * "-" + "+")
 print(("|" + " " * 10 + "|\n") * 5, end="")
 print("+" + 10 * "-" + "+")
+
+
+
+
+leg_a = float(input("Input first leg length: "))
+leg_b = float(input("Input second leg length: "))
+print("Hypotenuse length is " + str((leg_a**2 + leg_b**2) ** .5))
+
+
+
+# input a float value for variable a here
+a = float(input("any Number PLease "))
+# input a float value for variable b here
+b = float (input ("any Number please "))
+
+
+# output the result of addition here
+print(a+b)
+# output the result of subtraction here
+print(a-b)
+# output the result of multiplication here
+print(a*b)
+# output the result of division here
+print(a/b)
+
+print("\nThat's all, folks!")
+"""
+"""
+
+
+
+
+x = float(input("any Number Please:" ))
+ 
+print ("y =", (1/ (x +(1/ (x +(1/(x+(1/x)))))))) 
+
+
+"""
+
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+
+
+
+mins = mins + dura # find a total of all minutes
+hour = hour + mins // 60 # find a number of hours hidden in minutes and update the hour
+mins = mins%60
+hour = hour % 24
+
+
+
+
+# find a total of all minutes
+# find a number of hours hidden in minutes and update the hour
+# correct minutes to fall in the (0..59) range
+# correct hours to fall in the (0..23) range
+print(hour, ":", mins, sep='')
+
+
+
