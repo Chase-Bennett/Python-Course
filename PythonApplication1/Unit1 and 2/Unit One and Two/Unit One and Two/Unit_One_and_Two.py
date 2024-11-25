@@ -179,7 +179,7 @@ x = float(input("any Number Please:" ))
 print ("y =", (1/ (x +(1/ (x +(1/(x+(1/x)))))))) 
 
 
-"""
+
 
 hour = int(input("Starting time (hours): "))
 mins = int(input("Starting time (minutes): "))
@@ -201,5 +201,16 @@ hour = hour % 24
 # correct hours to fall in the (0..23) range
 print(hour, ":", mins, sep='')
 
+"""
+var = 0  # Assigning 0 to var
+print(var == 0)
+
+var = 1  # Assigning 1 to var
+print(var == 0)
 
 
+var = 0  # Assigning 0 to var
+print(var != 0)
+ 
+var = 1  # Assigning 1 to var
+print(var != 0)
