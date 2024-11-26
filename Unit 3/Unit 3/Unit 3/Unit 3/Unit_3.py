@@ -1,1 +1,4 @@
-print("test")
+
+
+n = int(input("num:"))
+print( n >= 100) 
