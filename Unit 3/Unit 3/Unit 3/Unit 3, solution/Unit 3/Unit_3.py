@@ -68,3 +68,25 @@ else:
 
 
 
+money= float(input("how much do you make: "))
+
+if money < 85528:
+    
+    money = money * .18
+    money = money-556.02
+    
+
+else:
+    money = ((money-85528)*.32)+14839.02
+
+
+
+if money<0:
+    money=0
+
+money = round(money,0)
+print("your taxes are ", money)
+
+
+
+
