@@ -1,5 +1,5 @@
 
-
+"""
 print("pq")
 n = int(input("num:"))
 print( n >= 100) 
@@ -170,16 +170,16 @@ while counter:
     counter -= 1
 print("Outside the loop.", counter)
 
+"""
 
 
 
 
-
-
+"""
 secret_number = 4545
 
 print(
-"""
+""""""
 +================================+
 | Welcome to my game, muggle!    |
 | Enter an integer number        |
@@ -187,10 +187,9 @@ print(
 | picked for you.                |
 | So, what is the secret number? |
 +================================+
-""")
+"""#)
 
-
-
+"""S
 
 guess= int(input("Try to guess my number: " ))
 
@@ -202,18 +201,4 @@ while guess != secret_number:
 print("Well done, muggle! You are free now.")
 """
 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-"""
+print("whatup")
