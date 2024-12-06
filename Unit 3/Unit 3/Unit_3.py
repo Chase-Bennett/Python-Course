@@ -1,8 +1,8 @@
 
-"""
 
-#n = int(input("num:"))
-#print( n >= 100) 
+print("pq")
+n = int(input("num:"))
+print( n >= 100) 
 
 
 
@@ -103,12 +103,10 @@ else:
 		print("Leap year")
 
 
-while True:
-    print("I'm stuck inside a loop.")
 
-    """
+   
 
-"""
+
 
 
 
@@ -171,17 +169,17 @@ while counter:
     print("Inside the loop.", counter)
     counter -= 1
 print("Outside the loop.", counter)
-"""
 
 
 
 
-"""
+
+
 
 secret_number = 4545
 
 print(
-""""""
+"""
 +================================+
 | Welcome to my game, muggle!    |
 | Enter an integer number        |
@@ -189,7 +187,7 @@ print(
 | picked for you.                |
 | So, what is the secret number? |
 +================================+
-"""""")
+""")
 
 
 
@@ -202,18 +200,20 @@ while guess != secret_number:
     guess = int(input("try again "))
 
 print("Well done, muggle! You are free now.")
-
-
 """
 
 
 
 
 
-for i in range(2, 8):
-    print("The value of i is currently", i)
+
+
+
+
  
 
 
 
 
+
+"""
