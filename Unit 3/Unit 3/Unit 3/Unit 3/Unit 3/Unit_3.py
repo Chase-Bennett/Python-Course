@@ -330,6 +330,7 @@ print("the height is " + str(Height))
 
 repeat = 0 
 c0 = int(input("non-negative  non-0 int please; "))
+
 while c0 != 1:
     print(c0)
     repeat = repeat+1
