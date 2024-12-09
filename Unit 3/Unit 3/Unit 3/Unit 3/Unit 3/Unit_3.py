@@ -296,15 +296,17 @@ print("You've successfully left the loop.")
 
 user_word = input("Word:")
 user_word = user_word.upper()
-
+letters = ""
 # Prompt the user to enter a word
 # and assign it to the user_word variable.
 
 for letter in user_word:
     # Complete the body of the for loop.
-    
+    if letter not in "AEIOU":
+        print(letter)
+        continue
 
-    print(user_word)
+print(user_word)
 
 
 
