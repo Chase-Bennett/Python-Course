@@ -228,6 +228,7 @@ for expo in range(16):
 
 
 from ast import Break
+from lib2to3.pytree import type_repr
 import time
 from tkinter import WORD
 # Write a for loop that counts to five.
@@ -310,7 +311,7 @@ for letter in user_word:
 
 print ("Vowels " + word_without_vowels) 
 """
-
+"""
 
 
 Num_Block = int(input("Number of blocks: "))
@@ -325,6 +326,21 @@ for i in (range(1,Num_Block+1)):
 
 print("the height is " + str(Height))
  
+"""
+
+repeat = 0 
+c0 = int(input("non-negative  non-0 int please; "))
+while c0 != 1:
+    print(c0)
+    repeat = repeat+1
+    if (c0 % 2) == 0:
+        c0=  c0/2
+
+    else:
+        c0 = 3*c0+1
+print("Repeated: "+ str(repeat))
+
+
 
 
 
