@@ -291,25 +291,40 @@ while True:
 
 print("You've successfully left the loop.")
 """
-
+"""
 
 
 user_word = input("Word:")
 user_word = user_word.upper()
-letters = ""
+word_without_vowels = ""
 # Prompt the user to enter a word
 # and assign it to the user_word variable.
 
 for letter in user_word:
     # Complete the body of the for loop.
-    if letter not in "AEIOU":
-        print(letter)
+    if letter  in "AEIOU":
+        word_without_vowels = word_without_vowels + letter
         continue
 
-print(user_word)
+    else: print(letter)
+
+print ("Vowels " + word_without_vowels) 
+"""
 
 
 
+Num_Block = int(input("Number of blocks: "))
+Block_Used = 0
+Height = 1
+for i in (range(1,Num_Block+1)):
+    print(i)
+    Block_Used = Block_Used + i
+    if Block_Used > Num_Block:
+        Height =  i-1
+        break
+
+print("the height is " + str(Height))
+ 
 
 
 
