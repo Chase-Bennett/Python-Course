@@ -1,4 +1,5 @@
 
+
 """
 print("pq")
 n = int(input("num:"))
@@ -201,4 +202,146 @@ while guess != secret_number:
 print("Well done, muggle! You are free now.")
 """
 
-print("whatup")
+for i in range(2, 8):
+    print("The value of i is currently", i)
+
+
+for i in range(1,80, 10):
+    print("The value of i is currently", i)
+
+
+
+for i in range(1, 1):
+    print("The value of i is currently", i)
+ 
+
+
+
+power = 1
+for expo in range(16):
+    print("2 to the power of", expo, "is", power)
+    power *= 2
+
+
+
+
+
+
+from ast import Break
+from lib2to3.pytree import type_repr
+import time
+from tkinter import WORD
+# Write a for loop that counts to five.
+    # Body of the loop - print the loop iteration number and the word "Mississippi".
+    # Body of the loop - use: time.sleep(1)
+"""
+# Write a print function with the final message.
+
+
+for i in range(0,6):
+    print(i,"Mississppi")
+    time.sleep(1)
+print("Ready or not, here I come!")
+"""
+"""
+
+
+
+
+print("Inside the loop.", i)
+print("Outside the loop.")
+
+
+# continue - example
+
+print("\nThe continue instruction:")
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print("Inside the loop.", i)
+print("Outside the loop.")
+
+
+
+largest_number = -99999999
+counter = 0
+
+while True:
+    number = int(input("Enter a number or type -1 to end the program: "))
+    if number == -1:
+        break
+    counter += 1
+    if number > largest_number:
+        largest_number = number
+
+if counter != 0:
+    print("The largest number is", largest_number)
+else:
+    print("You haven't entered any number.")
+
+
+    """
+"""
+Word= input("guess your word: ")
+
+while True:
+   if Word == "dog":
+      break
+   Word= input("guess your word: ")
+
+
+print("You've successfully left the loop.")
+"""
+"""
+
+
+user_word = input("Word:")
+user_word = user_word.upper()
+word_without_vowels = ""
+# Prompt the user to enter a word
+# and assign it to the user_word variable.
+
+for letter in user_word:
+    # Complete the body of the for loop.
+    if letter  in "AEIOU":
+        word_without_vowels = word_without_vowels + letter
+        continue
+
+    else: print(letter)
+
+print ("Vowels " + word_without_vowels) 
+"""
+"""
+
+
+Num_Block = int(input("Number of blocks: "))
+Block_Used = 0
+Height = 1
+for i in (range(1,Num_Block+1)):
+    print(i)
+    Block_Used = Block_Used + i
+    if Block_Used > Num_Block:
+        Height =  i-1
+        break
+
+print("the height is " + str(Height))
+ 
+"""
+
+repeat = 0 
+c0 = int(input("non-negative  non-0 int please; "))
+
+while c0 != 1:
+    print(c0)
+    repeat = repeat+1
+    if (c0 % 2) == 0:
+        c0=  c0/2
+
+    else:
+        c0 = 3*c0+1
+print("Repeated: "+ str(repeat))
+
+
+
+
+
