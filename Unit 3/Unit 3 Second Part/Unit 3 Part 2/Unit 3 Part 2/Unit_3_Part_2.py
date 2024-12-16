@@ -1,11 +1,11 @@
 from tokenize import Number
 
-"""
+
 j = 22
-i=15 
+i=1
 
 
-
+"""
 bit = i &j
 print(bit)
 
@@ -20,7 +20,7 @@ var_left = var << 2
 print(var, var_left, var_right)
 numbers = [10, 5, 7, 2, 1]
 print(numbers)
-"""
+
 
 print("Source file edit test")
 print(".sln edit test")
@@ -62,3 +62,60 @@ del hat_list[4]
 # Step 3: write a line of code that prints the length of the existing list.
 print(len(hat_list))
 print(hat_list)
+"
+
+
+numbers = [1,2,3,4,5,6,7,8,9]
+numbers.append(4)
+
+print(len(numbers))
+print(numbers)
+
+###
+while i < 20000:
+    numbers.insert(0, 222)
+    print(len(numbers))
+    print(numbers)
+    numbers.insert(1, 333)
+    print(len(numbers))
+    print(numbers)
+    i+=1
+
+#
+
+
+my_list = []  # Creating an empty list.
+
+for i in range(25):
+    my_list.append(i + 1)
+
+print(my_list)
+
+
+my_list = []  # Creating an empty list.
+ 
+for i in range(25):
+    my_list.insert(0, i + 1)
+ 
+print(my_list)
+
+"""
+
+numbers=[]
+while i <-89:
+    numbers.insert(0, 222)
+    print(len(numbers))
+    print(numbers)
+    numbers.insert(1, 333)
+    print(len(numbers))
+    print(numbers)
+    i+=1
+
+
+    my_list=[1,2]
+    length = len(my_list)
+
+for i in range(length // 2):
+    my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
+ 
+print(my_list)
