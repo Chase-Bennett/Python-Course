@@ -99,7 +99,7 @@ for i in range(25):
  
 print(my_list)
 
-"""
+
 
 numbers=[]
 while i <-89:
@@ -113,9 +113,94 @@ while i <-89:
 
 
     my_list=[1,2]
-    length = len(my_list)
+    length = my_list.length
 
 for i in range(length // 2):
     my_list[i], my_list[length - i - 1] = my_list[length - i - 1], my_list[i]
  
 print(my_list)
+
+
+"""
+
+
+"""
+
+
+# step 1
+beatles = []
+print("Step 1:", beatles)
+
+# step 2
+beatles.append("John lennon")
+beatles.append( "Paul McCartney" )
+beatles.append( "George Harrison")
+
+print("Step 2:", beatles)
+
+
+
+# Step 3: Prompt the user to add Stu Sutcliffe and Pete Best to the list
+for member in ["Stu Sutcliffe", "Pete Best"]:
+    beatles.append(input(f"Add {member} to the list: "))  # Prompts user to type names
+print("Step 3:", beatles)
+
+# Step 4: Remove Stu Sutcliffe and Pete Best from the list
+del beatles[-2:]  # Removes the last two members
+print("Step 4:", beatles)
+
+# Step 5: Add Ringo Starr to the beginning of the list
+beatles.insert(0, "Ringo Starr")
+print("Step 5:", beatles)
+
+
+# testing list legth
+print("The Fab", len(beatles))
+
+
+
+
+my_list = [8, 10, 6, 2, 41,2,3,4,32,1,233,2,32,12,2,2,2,3,4,2,4,]  # list to sort
+swapped = True  # It's a little fake, we need it to enter the while loop.
+print (my_list)
+while swapped:
+    swapped = False  # no swaps so far
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True  # a swap occurred!
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+ 
+print(my_list)
+
+
+my_list = []
+swapped = True
+num = int(input("How many elements do you want to sort: "))
+
+for i in range(num):
+    val = float(input("Enter a list element: "))
+    my_list.append(val)
+
+while swapped:
+    swapped = False
+    for i in range(len(my_list) - 1):
+        if my_list[i] > my_list[i + 1]:
+            swapped = True
+            my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+
+print("\nSorted:")
+print(my_list)
+
+
+"""
+# Copying the entire list.
+list_1 = [1]
+list_2 = list_1[:]
+list_1[0] = 2
+print(list_2)
+
+# Copying some part of the list.
+my_list = [10, 8, 6, 4, 2]
+new_list = my_list[1:-1]
+print(new_list)
+
