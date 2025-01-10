@@ -50,3 +50,5 @@ def message(what, number):
 message("telephone", 11)
 message("price", 5)
 message("number", "number")
+
+print("GitTest")
