@@ -270,7 +270,6 @@ for i in range(1, 20):
 
 
 print()
-"""
 
 
 
@@ -292,3 +291,40 @@ print(miles_gallon_to_liters_100km(23.5))
 
 
 
+def my_function():
+    var2 =None 
+    print("Do I know that variable?", var)
+    
+    print("Do I know that variable?", var)
+
+ 
+ 
+var = 1
+my_function()
+print(var)
+
+
+def my_function():
+    global var
+    var = 20
+    print("Do I know that variable?", var)
+
+
+#var = 1
+my_function()
+print(var)
+"""
+
+
+
+def my_function(n):
+    global var
+    print("I got", n)
+    n += 1
+    print("I have", n)
+
+global var
+var = 1
+
+my_function(var)
+print(var)
