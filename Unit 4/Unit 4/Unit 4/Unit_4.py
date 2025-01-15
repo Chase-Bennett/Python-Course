@@ -253,8 +253,8 @@ print(day_of_year(2023, 6, 15))   # Output: 166 (Valid date)
 
 
 
-
-
+#Prime lab
+"""
 
 def is_prime(num):
     for i in range(2,int(1+num**.5)):
@@ -264,9 +264,31 @@ def is_prime(num):
 
     
 
-for i in range(1, 200000):
+for i in range(1, 20):
        if is_prime(i + 1):
         print(i + 1, end=" ")
 
 
 print()
+"""
+
+
+
+
+def liters_100km_to_miles_gallon(liters):
+    return((235.214583/liters))
+
+def miles_gallon_to_liters_100km(miles):
+    
+    return((235.214583/miles))
+
+print(liters_100km_to_miles_gallon(3.9))
+print(liters_100km_to_miles_gallon(7.5))
+print(liters_100km_to_miles_gallon(10.))
+print(miles_gallon_to_liters_100km(60.3))
+print(miles_gallon_to_liters_100km(31.4))
+print(miles_gallon_to_liters_100km(23.5))
+
+
+
+
