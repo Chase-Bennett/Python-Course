@@ -318,12 +318,12 @@ print(var)
 
 
 def my_function(n):
-    global var
+    
     print("I got", n)
     n += 1
     print("I have", n)
 
-global var
+
 var = 1
 
 my_function(var)
