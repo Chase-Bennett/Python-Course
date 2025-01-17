@@ -477,7 +477,7 @@ def factorial_function(n):
  
 for n in range(1,int( input())): # testing
     print(n, factorial_function(n))
-"""
+
 
 def fib(n):
     if n < 1:
@@ -493,6 +493,55 @@ def fib(n):
     return the_sum
  
  
-for n in range(1, 100): # testing
+
+def fib(n):
+    if n < 1:
+         return None
+    if n < 3:
+        return 1
+
+    elem_1 = elem_2 = 1
+    the_sum = 0
+    for i in range(3, n + 1):
+        the_sum = elem_1 + elem_2
+        elem_1, elem_2 = elem_2, the_sum
+    return the_sum
+
+
+for n in range(1, 10): # testing
     print(n, "->", fib(n))
+
+
+
+
+tuple_1 = (1, 2, 4, 8)
+tuple_2 = 1., .5, .25, .125, "dog"
  
+print(tuple_1)
+print(tuple_2)
+
+
+
+my_tuple = (1, 10, 100, 1000)
+
+print(my_tuple[0])
+print(my_tuple[-1])
+print(my_tuple[1:])
+print(my_tuple[:-2])
+
+for elem in my_tuple:
+    print(elem)
+"""
+
+
+
+my_tuple = (1, 10, 100)
+
+t1 = my_tuple + (1000, 10000)
+t2 = my_tuple * 3
+
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in my_tuple)
+print(-10 not in my_tuple)
