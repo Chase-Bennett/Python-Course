@@ -617,7 +617,7 @@ dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
  
 dictionary.popitem()
 print(dictionary) # outputs: {'cat': 'chat', 'dog': 'chien'}
-"""
+
 school_class = {}
 
 while True:
@@ -641,3 +641,42 @@ for name in sorted(school_class.keys()):
         adding += score
         counter += 1
     print(name, ":", adding / counter)
+"""
+"""
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+
+duplicates = tup.count(2)
+ 
+print(duplicates) # outputs: 4
+
+
+d1 = {'Adam Smith': 'A', 'Judy Paxton': 'B+'}
+d2 = {'Mary Louis': 'A', 'Patrick White': 'C'}
+d3 = {}
+ 
+for item in (d1, d2):
+    d3.update(item)
+
+ 
+print(d3)
+
+try:
+    value = int(input('Enter a natural number: '))
+    print('The reciprocal of', value, 'is', 1/value)        
+except ValueError:
+    print('I do not know what to do.')    
+except ZeroDivisionError:
+    print('Division by zero is not allowed in our Universe.')    
+except:
+    print('Something strange has happened here... Sorry!')
+
+"""
+
+temperature = float(input('Enter current temperature:'))
+
+if temperature > 0:
+    print("Above zero")
+elif temperature < 0:
+    prin("Below zero")
+else:
+    print("Zero")
