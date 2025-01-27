@@ -670,7 +670,7 @@ except ZeroDivisionError:
 except:
     print('Something strange has happened here... Sorry!')
 
-"""
+
 
 temperature = float(input('Enter current temperature:'))
 
@@ -680,3 +680,21 @@ elif temperature < 0:
     prin("Below zero")
 else:
     print("Zero")
+"""
+
+
+
+
+def any():
+    print(var + 1, end='')
+ 
+ 
+var = 1
+any()
+print(var)
+ 
+
+tup = (1, 2, 4, 8)
+tup = tup[1:-1]
+tup = tup[0]
+print(tup)
