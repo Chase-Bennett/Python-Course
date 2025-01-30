@@ -19,19 +19,25 @@ def display_board(board):
     # and prints it out to the console.
 
 def enter_move(board):
-    human_move = int(input("Enter your move (1-9): "))
     free_fields = make_list_of_free_fields(board)
-    move_made = False
-    for i, row in enumerate(board):
-        for j, col in enumerate(row):
-            if col == human_move and (i, j) in free_fields:
-                board[i][j] = "O"
-                move_made = True
-                break
-        if move_made:
-            break
-    if not move_made:
-        print("Move not allowed, the field is already taken.")
+
+    if not free_fields:  # Prevents unnecessary input when board is full
+        return
+
+    while True:
+        try:
+            human_move = int(input("Enter your move (1-9): "))
+
+            for i, row in enumerate(board):
+                for j, col in enumerate(row):
+                    if col == human_move:
+                        board[i][j] = "O"
+                        return  # Exit function after successful move
+
+            print("Move not allowed, the field is already taken.")
+        except ValueError:
+            print("Invalid input! Please enter a number between 1-9.")
+
 
 
 
@@ -59,28 +65,25 @@ def make_list_of_free_fields(board):
 
             
 
-def victory_for(board, sign):
+
  
-        # Check rows for victory
-        for row in board:
-            if all(cell == sign for cell in row):
-                return True
-        else:
-                    return False
-        # Check columns for victory
-        for col in range(3):
-            if all(row[col] == sign for row in board):
-                return True
-        else:
-                    return False
-        # Check diagonals for victory
-        if all(board[i][i] == sign for i in range(3)):
+def victory_for(board, sign):
+    # Check rows
+    for row in board:
+        if all(cell == sign for cell in row):
             return True
-        if all(board[i][2 - i] == sign for i in range(3)):
+
+    # Check columns
+    for col in range(3):
+        if all(board[row][col] == sign for row in range(3)):
             return True
-            
-        else:
-                    return False
+
+    # Check diagonals
+    if all(board[i][i] == sign for i in range(3)) or all(board[i][2 - i] == sign for i in range(3)):
+        return True
+
+    return False  # If no win condition is met
+
         
     # The function analyzes the board's status in order to check if 
     # the player using 'O's or 'X's has 
@@ -91,33 +94,49 @@ def victory_for(board, sign):
 
 def draw_move(board):
 
-  try:
-        Robot_move=(randrange(8))
-        free_fields = make_list_of_free_fields(board)
-        move_made = False
-  for i, row in enumerate(board):
-          for j, col in enumerate(row):
-            if col == Robot_move and (i, j) in free_fields:
-                board[i][j] = "X"
-                move_made = True
-                break
-            if move_made:
-              break
-          if not move_made:
-           draw_move(board)
-  except:print("Tie")
+    from random import randrange
+    free_fields = make_list_of_free_fields(board)
+    
+    if not free_fields:  # Check if there are any moves left
+       print("Tie")
+       return
+    
+    i, j = free_fields[randrange(len(free_fields))]  # Pick a random free spot
+    board[i][j] = "X"
+
+        
+  
        
         
 
     # The function draws the computer's move and updates the board.
 
-while victory_for(board, "O") == False and victory_for(board, "X") == False:
+while not victory_for(board, "O") and not victory_for(board, "X"):
     display_board(board)
+
+    # Get human move
     enter_move(board)
+
+    # Check if human won
+    if victory_for(board, "O"):
+        display_board(board)
+        print("You win!")
+        break
+
+    # Check if the board is full before letting the computer move
+    if not make_list_of_free_fields(board):
+        print("Tie!")
+        break
+
+    # Computer makes a move
     draw_move(board)
 
-if victory_for(board, "O") == True:
-    print("You win")
-if victory_for(board, "X") == True:
-    print("You lose")
+    # Check if computer won
+    if victory_for(board, "X"):
+        display_board(board)
+        print("You lose!")
+        break
+
+# Final board display after the game ends
+display_board(board)
 
